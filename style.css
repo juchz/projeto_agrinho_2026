@@ -1,1 +1,95 @@
-style.css
+:root {
+    --verde: #2e7d32;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e8f5e9;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    padding: 25px;
+    border-radius: 24px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    color: var(--verde);
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.config-fazenda,
+.dashboard {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input,
+button {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    flex: 1;
+}
+
+button {
+    background: var(--verde);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.card {
+    flex: 1;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    background: #f9f9f9;
+    border-bottom: 5px solid #ccc;
+}
+
+.icone {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.status-box {
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    background: #eee;
+}
+
+.sucesso {
+    border-color: #27ae60;
+    background: #eafaf1 !important;
+}
+
+.alerta {
+    border-color: #e67e22;
+    background: #fef5e7 !important;
+}
