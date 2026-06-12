@@ -1,1 +1,47 @@
-index.html
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>🌱 Agro Forte, Futuro Sustentável</h1>
+            <p>Monitor de equilíbrio entre produção agrícola e preservação ambiental</p>
+        </header>
+
+        <section class="config-fazenda">
+            <input type="number" id="inputProducao" placeholder="Área destinada à produção (ha)">
+            <input type="number" id="inputPreservacao" placeholder="Área de preservação ambiental (ha)">
+            <button onclick="atualizarMonitor()">Analisar Sustentabilidade</button>
+        </section>
+
+        <section class="dashboard">
+            <div class="card" id="cardProducao">
+                <h3>🚜 Produção Agrícola</h3>
+                <div class="icone">🌾</div>
+                <p id="txtProducao">0 ha</p>
+            </div>
+
+            <div class="card" id="cardPreservacao">
+                <h3>🌳 Preservação Ambiental</h3>
+                <div class="icone">🍃</div>
+                <p id="txtPreservacao">0 ha</p>
+            </div>
+        </section>
+
+        <div id="mensagemStatus" class="status-box">
+            Insira os dados para verificar o equilíbrio sustentável da propriedade.
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
