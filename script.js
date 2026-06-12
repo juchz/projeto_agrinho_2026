@@ -21,7 +21,7 @@ function atualizarMonitor() {
         document.getElementById('cardPreservacao');
 
     if (isNaN(prod) || isNaN(pres)) {
-        alert("Preencha os dois campos.");
+        alert("Preencha os dois campos para realizar a análise.");
         return;
     }
 
@@ -34,7 +34,7 @@ function atualizarMonitor() {
     if (percentual >= 20) {
 
         msgStatus.innerText =
-        "🌿 Excelente! A propriedade demonstra equilíbrio entre produção e preservação ambiental.";
+        "🌿 Excelente! A propriedade demonstra equilíbrio entre produção agrícola e preservação ambiental.";
 
         msgStatus.className =
         "status-box sucesso";
